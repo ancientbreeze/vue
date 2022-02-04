@@ -1,0 +1,17 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+<!DOCTYPE html>
+<div>
+  <script type="x-template" id="form-template">
+    <div>
+      <label>{{inputLabel}} :</label>
+      <input type="text" v-model="name" />
+      <textarea v-model="desc" rows="8" cols="80"></textarea>
+    </div>
+  </script>
+
+  <div id="app">
+    <h2>{{appName}}</h2>
+    <form-component title="This is a form" v-bind:name="userName"></form-component>
+  </div>
+</div>
+<script src="another.js"></script>
